@@ -1,0 +1,741 @@
+body {
+
+    color: #222222;
+    font-family: 'TT Hoves';
+
+}
+
+.contentBlock {
+    padding: 0 calc(10vw - 13px);
+}
+
+/* 1 экран */
+
+.hello {
+    background-image: url('../img/html_css_js.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 30vw;
+}
+
+.logo {
+
+    width: 295px;
+    margin-top: 37px;
+}
+
+.courseInfo {
+    display: flex;
+    gap: 161px;
+    margin-top: 85px;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-weight: 400;
+    font-size: calc(0.5vw + 14px);
+    line-height: 140%;
+}
+
+.value {
+    font-weight: 700;
+    font-size: calc(0.5vw + 14px);
+    line-height: 140%;
+}
+
+.hcjText {
+    font-family: 'Chava';
+    font-weight: 400;
+    font-size: calc(3vw + 26px);
+    line-height: 110%;
+    margin-top: 76px;
+    margin-bottom: 40px;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.button_primary {
+    background: #6E3ABA;
+    border-radius: 12px;
+    padding: 20px 30px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button_secondary {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 20px 30px;
+
+    border: 1px solid #6E3ABA;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #6E3ABA;
+}
+
+/* 2 экран */
+
+/* .lists {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-box {
+    display: flex;
+    gap: 70px;
+
+    margin-bottom: 40px;
+}
+
+
+.courseHead {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 68px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+    margin-bottom: 100px;
+    margin-top: 160px;
+}
+
+.listItem__img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.listItem__head {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.listItem__text {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 140%;
+    width: 450px;
+} */
+
+
+
+/* 2 экран */
+
+h2 {
+
+    margin-top: 160px;
+    margin-bottom: 60px;
+
+    font-weight: 500;
+    font-size: calc(3vw + 24px);
+    line-height: 117%;
+    text-transform: uppercase;
+}
+
+.users {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 70px;
+}
+
+
+.user img {
+    width: 192px;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 140%;
+
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 400;
+    font-size: calc(1vw + 14px);
+    line-height: 140%;
+}
+
+
+/* 3, 11 экран */
+
+.timerScreen {
+
+    background-color: #6E3ABA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(4vw + 23px);
+    padding-bottom: calc(5vw + 21px);
+
+    margin-top: calc(6vw + 34px);
+}
+
+h3 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: calc(1.9vw + 27px);
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.timerContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    margin-top: calc(4vw + 5px);
+    margin-bottom: calc(4vw + 5px);
+}
+
+.timer span {
+    display: block;
+    color: #2F1D4E;
+}
+
+.timer span.value {
+    font-family: 'Chava';
+    /* 0.125*шир экран +13 px
+    1vw = 0.01*ШЭ
+    12.5vw + 13px */
+    font-size: calc(12.5vw + 13px);
+
+    line-height: 107.5%;
+}
+
+.timer span.desc {
+    font-weight: 500;
+    /* было 
+    fs:27px;
+    lh:32px;
+    делаем процент 32/27 = 119% */
+    line-height: 119%;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: calc(1.8vw + 3px);
+}
+
+/* 4 экран */
+
+.teacherContainer {
+    display: flex;
+    gap: 20px 50px;
+    flex-wrap: wrap;
+
+}
+
+.teacher {
+    /* задаем ширину через флекс */
+    flex-basis: 330px;
+}
+
+.teacher img {
+    width: 100%;
+}
+
+.teacherInfo {
+
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: calc(1vw + 34px);
+    line-height: 120%;
+    margin: 0;
+}
+
+.skills {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    margin-top: calc(6vw + 19px);
+}
+
+.skils span {
+    margin-bottom: 20px;
+}
+
+/* 5 экран */
+
+.whatWeDo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 120px;
+}
+
+.whatWeDo-1 {
+    flex-basis: 400px;
+}
+
+.whatWeDo-2 {
+    flex-basis: 400px;
+}
+
+.user {
+    padding-bottom: 90px;
+}
+
+.user span {
+    font-weight: 600;
+    font-size: calc(1vw + 14px);
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+
+/* 6 экран */
+
+.program {
+    padding-bottom: 140px;
+}
+
+.programScreen {
+    border: 2px solid #222;
+    padding: calc(4vw + 23px) calc(5vw + 1px) calc(4vw - 14px);
+    position: relative;
+}
+
+.programScreen h2 {
+    margin: 0;
+}
+
+.lessons {
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.lesson {
+    font-size: 21px;
+    line-height: 140%;
+    border-bottom: 1px solid #A1A1A1;
+    padding: 24px 0;
+}
+
+.programScreen .button_primary,
+.programbutton {
+    /* автомалтический выравнивает блок по центру */
+    margin: 0 auto;
+}
+
+.programbutton {
+    margin-top: 30px;
+}
+
+.mobily {
+    display: none;
+}
+
+
+#corner {
+    position: absolute;
+    top: -4px;
+    right: -10px;
+    width: 5vw;
+}
+
+
+/* 7 экран */
+
+.diplomeBox {
+    display: flex;
+    gap: 20px;
+}
+
+.diplomeBox h2 {
+    margin: 0;
+}
+
+.diplome__mobile {
+    display: none;
+}
+
+
+/* 8 экран */
+
+.income {
+    margin-bottom: 160px;
+}
+
+.income img {
+    width: 100%;
+}
+
+/* 9 экран */
+
+.privilege-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.privilege-img {
+    flex-basis: 580px;
+}
+
+.privilege-img img {
+    width: 100%;
+}
+
+.privilege-item {
+    flex-basis: 320px;
+    flex-grow: 1;
+}
+
+/* 10 экран */
+
+.review {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review__item {
+    background-color: #F0F7FD;
+    border-radius: 12px;
+    padding: 50px 20px 45px;
+}
+
+
+.review__people-img {
+    float: left;
+    margin: 0 12px 0 0;
+}
+
+.review__item-text {
+    margin-bottom: 40px;
+}
+
+/* 12 экран */
+
+.aboutUs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 97px;
+
+    /* margin-top: 80px;
+    margin-bottom: 160px; */
+}
+
+.aboutUs__success {
+    flex-basis: 426px;
+}
+
+.aboutUs__success-text {
+    font-weight: 600;
+    font-size: calc(0.5vw + 20px);
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.aboutUs__quantity {
+    display: grid;
+    row-gap: 40px;
+
+
+    flex-grow: 1;
+}
+
+.aboutUs-head {
+    font-weight: 700;
+    font-size: calc(3vw + 24px);
+    line-height: 68px;
+    letter-spacing: 0.01em;
+    margin: 0;
+}
+
+.aboutUs-text {
+    margin: 0;
+}
+
+/* 13 экран */
+
+.party__head {
+    margin-bottom: 14px;
+}
+
+
+/* 14 экран */
+
+.black {
+    background-color: #222;
+
+}
+
+.contentBlock.black {
+    padding: 10%;
+    /* 80 25 (470)*/
+    padding-bottom: 80px;
+    padding-top: 60px;
+}
+
+.formContainer {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px 145px;
+}
+
+.textSide {
+    color: #fff;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.textSide h2 {
+    margin: 0;
+    margin-bottom: calc(4vw + 25px);
+}
+
+.textSide span {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.formSide {
+    flex-basis: 150px;
+    flex-grow: 1;
+
+    background-color: #fff;
+    border-radius: 12px;
+    text-align: center;
+
+    padding: 60px calc(5vw + 13px) calc(-1vw + 64px);
+
+    position: relative;
+
+    margin-top: 20px;
+}
+
+
+
+.shortInfo {
+    font-style: calc (1vw + 14px);
+    line-height: 140%;
+}
+
+.shortInfo img {
+    width: 28px;
+    margin-right: 20px;
+}
+
+.formSide h5 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+
+.formSide form {
+    margin-top: 7px;
+    margin-bottom: 40px;
+}
+
+
+.formSide .button_primary {
+    margin-top: 30px;
+}
+
+
+input {
+
+    display: block;
+    margin: auto;
+    border: 0;
+    border-bottom: 1px solid rgb(162, 162, 162, 0.42);
+
+    font-size: 20px;
+    line-height: 150%;
+    /* color:rgba(0, 0, 0, 0.17); */
+
+    padding: 10px 0;
+    margin-top: 13px;
+
+    width: calc(8vw + 237px);
+
+}
+
+.formInfo {
+    color: #222;
+    opacity: 0.5;
+
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+
+.formInfo span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formInfo span {
+    display: block;
+}
+
+.sale {
+    background-color: #6E3ABA;
+    width: calc(6vw + 83px);
+    height: calc(6vw + 83px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: calc(-3vw - 42px);
+    left: calc(-3vw - 42px);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+    /* 2 экран */
+
+    .users {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .user {
+        padding-bottom: 13px
+    }
+
+    /* 6 экран */
+
+    .desctop {
+        display: none;
+    }
+
+    .mobily {
+        display: block;
+    }
+
+    .lesson:last-child {
+        border: 0;
+        padding-bottom: 0;
+    }
+
+    /* 7 экран */
+
+    .diplome__desctop {
+        display: none;
+    }
+
+    .diplome__mobile {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* 1 экран*/
+
+    .logo {
+        width: 216px;
+    }
+
+    .courseInfo {
+        margin-top: 28px;
+        gap: 74px;
+    }
+
+    .hcjText {
+        margin-top: 48px;
+    }
+
+    
+
+
+    /* 10 экран */
+
+    .reviewOff {
+        display: none;
+    }
+
+    .review {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* 12 экран */
+
+    .aboutUs {
+        gap: 40px;
+    }
+
+    /* 14 экран */
+
+    .sale {
+        left: auto;
+        right: -14px;
+    }
+
+
+}
